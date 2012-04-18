@@ -22,23 +22,23 @@ Gem::Specification.new do |s|
   # SQL foreign keys
   s.add_runtime_dependency('foreigner', '~> 1.1.1')
   # Authentication
-  s.add_runtime_dependency('devise', '~> 1.5.3')
+  s.add_runtime_dependency('devise', '>= 1.5.3')
   # CRUD controllers
   s.add_runtime_dependency('inherited_resources', '~> 1.3.0')
   # Slug generation
   s.add_runtime_dependency('stringex', '~> 1.3.0')
   # Avatar attachments
-  s.add_runtime_dependency('avatars_for_rails', '~> 0.2.5')
+  s.add_runtime_dependency('avatars_for_rails', '>= 0.2.5')
   # jQuery
   s.add_runtime_dependency('jquery-rails', '>= 1.0.9')
   # Authorization
-  s.add_runtime_dependency('cancan', '~> 1.6.4')
+  s.add_runtime_dependency('cancan', '>= 1.6.4')
   # Pagination
   s.add_runtime_dependency('kaminari', '~> 0.13.0')
   # OAuth client
-  s.add_runtime_dependency('omniauth','~> 1.0.2')
-  s.add_runtime_dependency('omniauth-facebook','~> 1.2.0')
-  s.add_runtime_dependency('omniauth-linkedin','~> 0.0.6')
+  s.add_runtime_dependency('omniauth','>= 1.0.2')
+  s.add_runtime_dependency('omniauth-facebook','>= 1.2.0')
+  s.add_runtime_dependency('omniauth-linkedin','>= 0.0.6')
   # Messages
   s.add_runtime_dependency('mailboxer','~> 0.6.5')
   # Tagging
