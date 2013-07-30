@@ -124,7 +124,6 @@ class User < ActiveRecord::Base
     end
 
     def find_or_create_for_facebook_oauth(hash, signed_in_resource = nil)
-      puts hash.inspect
       auth = Authentication.find_by_provider_and_uid(hash["provider"], hash["uid"])
       user = User.find_by_email(hash["info"]["email"])
 

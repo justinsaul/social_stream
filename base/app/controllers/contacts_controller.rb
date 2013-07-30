@@ -56,6 +56,10 @@ class ContactsController < ApplicationController
         @contacts = Kaminari.paginate_array(@contacts).page(params[:page]).per(10)
         render :action => :index
       }
+      format.json {
+        @contacts = Kaminari.paginate_array(@contacts).page(params[:page]).per(10)
+        render :text => to_json(@contacts)
+      }
     end
   end
 
